@@ -106,8 +106,9 @@ fig_rutas = px.bar(
 #BORRAR leyenda de paleta colores
 fig_rutas.update_coloraxes(showscale=False)
 
-col4, col5=st.columns(2)
-with col4:
-    st.plotly_chart(fig_barras,use_container_width=True)
-with col5:
-    st.plotly_chart(fig_rutas,use_container_width=True)
+with st.container(border=True):
+    col4, col5=st.columns(2)
+    with col4:
+        st.plotly_chart(fig_barras,use_container_width=True)
+    with col5:
+        st.plotly_chart(fig_rutas,use_container_width=True)
