@@ -63,15 +63,17 @@ paleta_barras = px.colors.qualitative.Antique
 #ESTABLECER IMAGEN EN ENCABEZADO UTILIZANDO UN CONTAINER imagen tomada de: https://www.pexels.com/
 st.image('encabezado.png', use_container_width=True)
 st.title('Datos Operaciones')
-col1, col2, col3 =st.columns(3)
-with col1:
-    st.metric('Mínimo',f'{minimo:.0f}',border=True)
-with col2:
-    st.metric('Media',f'{media:.0f}',border=True)
-with col3:
-    st.metric('Máximo',f'{maximo:.0f}',border=True)
+with st.container(border=True):
 
-#VER DATAFRAME EN DESPLEGABLE:
+    col1, col2, col3 =st.columns(3)
+    with col1:
+        st.metric('Mínimo',f'{minimo:.0f}',border=True)
+    with col2:
+        st.metric('Media',f'{media:.0f}',border=True)
+    with col3:
+        st.metric('Máximo',f'{maximo:.0f}',border=True)
+
+    #VER DATAFRAME EN DESPLEGABLE:
 with st.expander('Ver Matriz de Datos'):
     st.dataframe(df)
 
