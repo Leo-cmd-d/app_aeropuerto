@@ -41,6 +41,8 @@ st.markdown(
     <style>
         .block-container{
             max-width: 1200px;
+        .st-emotion-cache-rsr9ey {
+            color: skyblue;
         }
     </style>
     ''',
