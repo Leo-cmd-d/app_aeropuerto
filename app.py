@@ -44,6 +44,9 @@ st.markdown(
         .st-emotion-cache-rsr9ey {
             color: skyblue;
         }
+        .st-c2 {
+            background-color: skyblue;
+        }
     </style>
     ''',
     unsafe_allow_html=True
