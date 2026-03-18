@@ -132,5 +132,3 @@ with tab2:
     fig_rutas.update_coloraxes(showscale=False)
     st.plotly_chart(fig_rutas,use_container_width=True,key='rutas_tab2')
     df_top10_rutas = df_top10_rutas.sort_values('CANTIDAD', ascending=True)
-
-    
